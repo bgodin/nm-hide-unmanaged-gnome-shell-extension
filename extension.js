@@ -1,5 +1,5 @@
 
-const NetworkManager = imports.gi.NetworkManager;
+const NM = imports.gi.NM;
 const Network = imports.ui.status.network;
 
 let origDeviceAdded;
@@ -8,7 +8,7 @@ function enable() {
     origDeviceAdded = Network.NMApplet.prototype._deviceAdded;
 
     let f = function (client, device, skipSyncDeviceNames) {
-        if (device.state === NetworkManager.DeviceState.UNMANAGED) {
+        if (device.state === NM.DeviceState.UNMANAGED) {
             return;
         }
 

@@ -6,6 +6,8 @@ This is very usefull when using a lot of virtual solutions, such as docker or vi
 To install just place this extension into `~/.local/share/gnome-shell/extensions/` folder and relogin. 
 Use `gnome-tweak-tool` to enable the extension.
 
+Make sure that the folder name matches the uuid in metadata.json
+
 This is example of my `/etc/NetworkManager/NetworkManager.conf`:
 ```
 [main]
